@@ -10,10 +10,17 @@ const Letter = ({alphabet, controls, randX, angleStart, angleEnd, randY}) => {
         },
         stageOne : {
           rotate: [angleStart, angleEnd],
+          x: [randX, randX+2],
           transition: {
-              type: "spring",
-              yoyo: Infinity,
-              duration: 0.08
+              x: {
+                yoyo: Infinity,
+                duration: 0.01
+              },
+              rotate: {
+                  type: "spring",
+                  yoyo: Infinity,
+                  duration: 0.08
+              }
             }
         },
         final : {
