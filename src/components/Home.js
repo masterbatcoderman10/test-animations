@@ -17,6 +17,7 @@ const Home = () => {
         </main>
         <section className='gallery'>
             <GalleryCard imgPath={"./letterRumble.png"} title={"Letter Rumble Animation"} path={"/alphabet-rumble"}/>
+            <GalleryCard imgPath={"./picAnis.png"} title={"Different Card Animations"} path={"/pic-animations"}/>
         </section>
         </div>
     )
